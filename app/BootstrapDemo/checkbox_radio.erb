@@ -1,0 +1,133 @@
+<main class="container py-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/app">Rhodes ROSA style demo</a></li>
+      <li class="breadcrumb-item active" aria-current="page">ROSA checkbox & radio</li>
+    </ol>
+  </nav>
+
+  <header class="mb-4">
+    <p class="text-uppercase text-body-secondary fw-semibold mb-2">Rhodes ROSA style demo</p>
+    <h1 class="h2 mb-2">ROSA checkbox & radio</h1>
+    <p class="text-body-secondary mb-0">Примеры controls по ROSA atoms: checkbox 16/20/33×22, radio 20px, inactive/on-dark/active states.</p>
+  </header>
+
+  <section class="card mb-4">
+    <div class="card-header fw-semibold">Checkbox atoms</div>
+    <div class="card-body">
+      <div class="row g-3">
+        <div class="col-12 col-lg-6">
+          <div class="rosa-control-surface d-grid gap-3">
+            <div class="button-demo-token">Inactive / Active / Disabled</div>
+            <div class="rosa-control-row">
+              <input class="form-check-input rosa-check-sm" type="checkbox" aria-label="Small inactive">
+              <input class="form-check-input" type="checkbox" aria-label="Default inactive">
+              <input class="form-check-input rosa-check-lg" type="checkbox" aria-label="Large inactive">
+            </div>
+            <div class="rosa-control-row">
+              <input class="form-check-input rosa-check-sm" type="checkbox" aria-label="Small active" checked>
+              <input class="form-check-input" type="checkbox" aria-label="Default active" checked>
+              <input class="form-check-input rosa-check-lg" type="checkbox" aria-label="Large active" checked>
+            </div>
+            <div class="rosa-control-row">
+              <input class="form-check-input rosa-check-sm" type="checkbox" aria-label="Small disabled" disabled>
+              <input class="form-check-input" type="checkbox" aria-label="Default disabled" disabled>
+              <input class="form-check-input rosa-check-lg" type="checkbox" aria-label="Large disabled" disabled>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="rosa-control-surface rosa-control-surface-dark d-grid gap-3">
+            <div class="button-demo-token text-white-50">Dark inactive / Active</div>
+            <div class="rosa-control-row">
+              <input class="form-check-input rosa-check-sm rosa-check-on-dark" type="checkbox" aria-label="Small dark inactive">
+              <input class="form-check-input rosa-check-on-dark" type="checkbox" aria-label="Default dark inactive">
+              <input class="form-check-input rosa-check-lg rosa-check-on-dark" type="checkbox" aria-label="Large dark inactive">
+            </div>
+            <div class="rosa-control-row">
+              <input class="form-check-input rosa-check-sm" type="checkbox" aria-label="Small dark active" checked>
+              <input class="form-check-input" type="checkbox" aria-label="Default dark active" checked>
+              <input class="form-check-input rosa-check-lg" type="checkbox" aria-label="Large dark active" checked>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card mb-4">
+    <div class="card-header fw-semibold">Radio atoms</div>
+    <div class="card-body">
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <div class="rosa-control-surface d-grid gap-3">
+            <div class="form-check d-flex align-items-center gap-2">
+              <input class="form-check-input" type="radio" name="rosa-radio-light" id="radio-light-inactive">
+              <label class="form-check-label" for="radio-light-inactive">Inactive radio</label>
+            </div>
+            <div class="form-check d-flex align-items-center gap-2">
+              <input class="form-check-input" type="radio" name="rosa-radio-light" id="radio-light-active" checked>
+              <label class="form-check-label" for="radio-light-active">Active radio</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="rosa-control-surface rosa-control-surface-dark d-grid gap-3">
+            <div class="form-check d-flex align-items-center gap-2">
+              <input class="form-check-input rosa-check-on-dark" type="radio" name="rosa-radio-dark" id="radio-dark-inactive">
+              <label class="form-check-label" for="radio-dark-inactive">Dark inactive radio</label>
+            </div>
+            <div class="form-check d-flex align-items-center gap-2">
+              <input class="form-check-input" type="radio" name="rosa-radio-dark" id="radio-dark-active" checked>
+              <label class="form-check-label" for="radio-dark-active">Active radio</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card mb-4">
+    <div class="card-header fw-semibold">Labels and disabled</div>
+    <div class="card-body">
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <div class="form-check d-flex align-items-center gap-2 mb-3">
+            <input class="form-check-input" type="checkbox" id="checkbox-label-active" checked>
+            <label class="form-check-label" for="checkbox-label-active">Выбранный параметр</label>
+          </div>
+          <div class="form-check d-flex align-items-center gap-2 mb-3">
+            <input class="form-check-input" type="checkbox" id="checkbox-label-inactive">
+            <label class="form-check-label" for="checkbox-label-inactive">Не выбранный параметр</label>
+          </div>
+          <div class="form-check d-flex align-items-center gap-2">
+            <input class="form-check-input" type="checkbox" id="checkbox-label-disabled" disabled>
+            <label class="form-check-label" for="checkbox-label-disabled">Disabled параметр</label>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <p class="text-body-secondary mb-0">ROSA checkbox визуально круглый/pill-like: default 20×20 radius 10, small 16×16 radius 8, large overlay 33×22 radius 11. Radio active — внешний stroke #3988FF и внутренний круг 12px.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card mb-4">
+    <div class="card-header fw-semibold">Image select guide</div>
+    <div class="card-body">
+      <p class="text-body-secondary">Большой checkbox используется как overlay при выборе обоев или других изображений.</p>
+      <div class="rosa-image-select-grid">
+        <div class="rosa-image-option"><input class="form-check-input rosa-image-check" type="checkbox" aria-label="Selected image" checked></div>
+        <div class="rosa-image-option"><input class="form-check-input rosa-image-check" type="checkbox" aria-label="Image option"></div>
+        <div class="rosa-image-option"><input class="form-check-input rosa-image-check" type="checkbox" aria-label="Image option"></div>
+        <div class="rosa-image-option"><input class="form-check-input rosa-image-check" type="checkbox" aria-label="Image option"></div>
+      </div>
+    </div>
+  </section>
+
+  <a class="btn btn-outline-secondary" href="/app">
+    <i data-feather="arrow-left" class="me-1"></i>
+    Назад на главную
+  </a>
+</main>

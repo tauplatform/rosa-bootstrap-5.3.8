@@ -1,0 +1,90 @@
+<main class="container py-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/app">Rhodes ROSA style demo</a></li>
+      <li class="breadcrumb-item active" aria-current="page">ROSA switch</li>
+    </ol>
+  </nav>
+
+  <header class="mb-4">
+    <p class="text-uppercase text-body-secondary fw-semibold mb-2">Rhodes ROSA style demo</p>
+    <h1 class="h2 mb-2">ROSA switch</h1>
+    <p class="text-body-secondary mb-0">Переключатель по ROSA atoms: track 36×20 radius 10, thumb 20×14 radius 7, active #3988FF.</p>
+  </header>
+
+  <section class="card mb-4">
+    <div class="card-header fw-semibold">Atoms</div>
+    <div class="card-body">
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <div class="rosa-switch-surface d-grid gap-3">
+            <div class="rosa-switch-row">
+              <span class="rosa-switch-label">Active</span>
+              <input class="form-check-input rosa-switch" type="checkbox" role="switch" checked aria-label="Active switch">
+            </div>
+            <div class="rosa-switch-row">
+              <span class="rosa-switch-label">Inactive</span>
+              <input class="form-check-input rosa-switch" type="checkbox" role="switch" aria-label="Inactive switch">
+            </div>
+            <div class="rosa-switch-row">
+              <span class="rosa-switch-label">Active disabled</span>
+              <input class="form-check-input rosa-switch" type="checkbox" role="switch" checked disabled aria-label="Active disabled switch">
+            </div>
+            <div class="rosa-switch-row">
+              <span class="rosa-switch-label">Inactive disabled</span>
+              <input class="form-check-input rosa-switch" type="checkbox" role="switch" disabled aria-label="Inactive disabled switch">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="rosa-switch-surface rosa-switch-surface-dark d-grid gap-3">
+            <div class="rosa-switch-row">
+              <span class="rosa-switch-label">Dark active</span>
+              <input class="form-check-input rosa-switch rosa-switch-on-dark" type="checkbox" role="switch" checked aria-label="Dark active switch">
+            </div>
+            <div class="rosa-switch-row">
+              <span class="rosa-switch-label">Dark inactive</span>
+              <input class="form-check-input rosa-switch rosa-switch-on-dark" type="checkbox" role="switch" aria-label="Dark inactive switch">
+            </div>
+            <div class="rosa-switch-row">
+              <span class="rosa-switch-label">Dark active disabled</span>
+              <input class="form-check-input rosa-switch rosa-switch-on-dark" type="checkbox" role="switch" checked disabled aria-label="Dark active disabled switch">
+            </div>
+            <div class="rosa-switch-row">
+              <span class="rosa-switch-label">Dark inactive disabled</span>
+              <input class="form-check-input rosa-switch rosa-switch-on-dark" type="checkbox" role="switch" disabled aria-label="Dark inactive disabled switch">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card mb-4">
+    <div class="card-header fw-semibold">Settings list example</div>
+    <div class="card-body">
+      <div class="list-group">
+        <label class="list-group-item rosa-switch-row">
+          <span>
+            <span class="d-block fw-semibold">Уведомления</span>
+            <span class="text-body-secondary">Показывать системные уведомления</span>
+          </span>
+          <input class="form-check-input rosa-switch" type="checkbox" role="switch" checked>
+        </label>
+        <label class="list-group-item rosa-switch-row">
+          <span>
+            <span class="d-block fw-semibold">Автосинхронизация</span>
+            <span class="text-body-secondary">Обновлять данные в фоне</span>
+          </span>
+          <input class="form-check-input rosa-switch" type="checkbox" role="switch">
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <a class="btn btn-outline-secondary" href="/app">
+    <i data-feather="arrow-left" class="me-1"></i>
+    Назад на главную
+  </a>
+</main>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru" data-bs-theme="rosa">
+
+<head>
+  <title>Rhodes ROSA style demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="/public/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <script type="text/javascript" src="/public/libs/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- feather icons -->
+  <script src="/public/libs/feather/js/feather.min.js"></script>
+
+  <script src="/public/api/rhoapi-modules.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="/public/css/rosa-bootstrap-5.css">
+</head>
+
+<body>
+<%= @content %>
+</body>
+
+<script>
+  if (window.feather) {
+    feather.replace();
+  }
+</script>
+
+</html>
+
+
+
+

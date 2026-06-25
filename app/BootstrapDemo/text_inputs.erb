@@ -1,0 +1,127 @@
+<main class="container py-4">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/app">Rhodes ROSA style demo</a></li>
+      <li class="breadcrumb-item active" aria-current="page">ROSA поля ввода</li>
+    </ol>
+  </nav>
+
+  <header class="mb-4">
+    <p class="text-uppercase text-body-secondary fw-semibold mb-2">Rhodes ROSA style demo</p>
+    <h1 class="h2 mb-2">ROSA поля ввода</h1>
+    <p class="text-body-secondary mb-0">Примеры text inputs по визуальному стилю ROSA: 40px высота, radius 16, мягкий фон 5%, border 8%, caret #3988FF.</p>
+  </header>
+
+  <section class="card mb-4">
+    <div class="card-header fw-semibold">Single-line states</div>
+    <div class="card-body">
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <label class="form-label" for="rosa-input-placeholder">Placeholder</label>
+          <input id="rosa-input-placeholder" class="form-control rosa-field" type="text" placeholder="Текст">
+        </div>
+        <div class="col-12 col-md-6">
+          <label class="form-label" for="rosa-input-filled">Filled</label>
+          <input id="rosa-input-filled" class="form-control rosa-field" type="text" value="Текст">
+        </div>
+        <div class="col-12 col-md-6">
+          <label class="form-label" for="rosa-input-focus">Focus preview</label>
+          <input id="rosa-input-focus" class="form-control rosa-field" type="text" value="Текст" autofocus>
+        </div>
+        <div class="col-12 col-md-6">
+          <label class="form-label" for="rosa-input-disabled">Disabled</label>
+          <input id="rosa-input-disabled" class="form-control rosa-field" type="text" placeholder="Заполните поле" disabled>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card mb-4">
+    <div class="card-header fw-semibold">Validation</div>
+    <div class="card-body">
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <label class="form-label" for="rosa-input-invalid">Invalid value</label>
+          <input id="rosa-input-invalid" class="form-control rosa-field is-invalid" type="text" value="Текст?%$#!">
+          <div class="rosa-field-feedback">Имя содержит недопустимые символы</div>
+        </div>
+        <div class="col-12 col-md-6">
+          <label class="form-label" for="rosa-input-required">Required field</label>
+          <input id="rosa-input-required" class="form-control rosa-field is-invalid" type="text" value="">
+          <div class="rosa-field-feedback">Заполните поле</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card mb-4">
+    <div class="card-header fw-semibold">Fields with inline actions</div>
+    <div class="card-body">
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <label class="form-label" for="rosa-input-clear">Clear action</label>
+          <div class="rosa-field-group">
+            <input id="rosa-input-clear" class="form-control" type="text" value="Имя группы">
+            <button class="rosa-field-clear" type="button" aria-label="Очистить">×</button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <label class="form-label" for="rosa-input-send">Send action</label>
+          <div class="rosa-field-group">
+            <input id="rosa-input-send" class="form-control" type="text" value="SMS сообщение">
+            <button class="btn btn-primary rosa-field-action" type="button" aria-label="Отправить">
+              <i data-feather="arrow-up" width="16" height="16"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card mb-4">
+    <div class="card-header fw-semibold">Textarea / message</div>
+    <div class="card-body">
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <label class="form-label" for="rosa-textarea-small">Message textarea</label>
+          <div class="rosa-field-group">
+            <textarea id="rosa-textarea-small" class="form-control rosa-textarea" placeholder="SMS сообщение"></textarea>
+            <button class="btn btn-primary rosa-field-action" type="button" aria-label="Отправить">
+              <i data-feather="arrow-up" width="16" height="16"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <label class="form-label" for="rosa-textarea-large">Large textarea</label>
+          <textarea id="rosa-textarea-large" class="form-control rosa-textarea rosa-textarea-lg" placeholder="SMS сообщение"></textarea>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card mb-4">
+    <div class="card-header fw-semibold">Light and dark surfaces</div>
+    <div class="card-body">
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <div class="rosa-field-surface d-grid gap-3">
+            <input class="form-control rosa-field" type="text" placeholder="Введите номер телефона">
+            <input class="form-control rosa-field rosa-field-lg" type="text" value="8 (922) 033-89-22">
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="rosa-field-surface rosa-field-surface-dark d-grid gap-3">
+            <input class="form-control rosa-field" type="text" placeholder="Введите номер телефона">
+            <input class="form-control rosa-field rosa-field-lg" type="text" value="8 (922) 033-89-22">
+            <input class="form-control rosa-field" type="text" placeholder="Disabled" disabled>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a class="btn btn-outline-secondary" href="/app">
+    <i data-feather="arrow-left" class="me-1"></i>
+    Назад на главную
+  </a>
+</main>
