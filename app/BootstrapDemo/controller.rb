@@ -24,7 +24,17 @@ class BootstrapDemoController < Rho::RhoController
   def switches
     render
   end
+
+  def dialogs
+    render
+  end
+
+  def list_groups
+    render
+  end
 end
+
+
 
 
 
